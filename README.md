@@ -1,6 +1,6 @@
 # PostGIS image
 
-This image is based on the official [Docker Postgres image](https://registry.hub.docker.com/_/postgres/). This image install [PostGIS](http://postgis.net/) 2.1 on [Postgres](http://www.postgresql.org/) 9.4.
+This image is based on the official [Docker Postgres image](https://registry.hub.docker.com/_/postgres/). This image install [PostGIS](http://postgis.net/) 2.1 on [Postgres](http://www.postgresql.org/) 9.3.
 
 ## How to use
 
