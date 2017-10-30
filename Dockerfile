@@ -1,9 +1,9 @@
-FROM postgres:9.6
+FROM postgres:10.0
 MAINTAINER Guillaume Luchet <guillaume@geelweb.org>
 
 # Install PostGIS
 RUN apt-get update -y
-RUN apt-get install -y postgresql-9.6-postgis-2.3
+RUN apt-get install -y postgresql-10-postgis-2.4
 
 # Add the initialization script
 COPY init-postgis.sh /docker-entrypoint-initdb.d/
