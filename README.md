@@ -2,7 +2,7 @@
 
 This image is based on the official [Docker Postgres image](https://registry.hub.docker.com/_/postgres/).
 
-This image install [PostGIS](http://postgis.net/) 2.1 on [Postgres](http://www.postgresql.org/) 9.4.
+This image install [PostGIS](http://postgis.net/) 2.2 on [Postgres](http://www.postgresql.org/) 9.5.
 
 ## How to use
 
@@ -22,3 +22,4 @@ This image install [PostGIS](http://postgis.net/) 2.1 on [Postgres](http://www.p
 
 * *9.3*: Install PostGIS 2.1 on Postgres 9.3
 * *9.4*: Install PostGIS 2.1 on Postgres 9.4
+* *9.5*: Install PostGIS 2.2 on Postgres 9.5
