@@ -1,0 +1,17 @@
+language: bash
+services: docker
+
+env:
+  - VERSION=9.3
+
+install:
+  - git clone https://github.com/docker-library/official-images.git ~/official-images
+
+before_script:
+  - env | sort
+  - cd "$VERSION"
+  - image="geelweb/postgis:$VERSION"
+
+script:
+  - docker build --pull -t "$image" .
+  - ~/official-images/test/run.sh -c ~/official-images/test/config.sh -c "../tests/postgis-config.sh" "$image"
