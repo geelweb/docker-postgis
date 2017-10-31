@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e #o pipefail
+set -eo pipefail
 
 dir="$(dirname "$(readlink -f "$BASH_SOURCE")")"
 
