@@ -1,5 +1,5 @@
 #!/bin/bash
-set -eo pipefail
+set -e #o pipefail
 
 dir="$(dirname "$(readlink -f "$BASH_SOURCE")")"
 
@@ -9,13 +9,13 @@ export POSTGRES_USER='my cool postgres user'
 export POSTGRES_PASSWORD='my cool postgres password'
 export POSTGRES_DB='my cool postgres database'
 
-cname="postgres-container-$RANDOM-$RANDOM"
+cname="postgis-container-$RANDOM-$RANDOM"
 cid="$(docker run -d -e POSTGRES_USER -e POSTGRES_PASSWORD -e POSTGRES_DB --name "$cname" "$image")"
 trap "docker rm -vf $cid > /dev/null" EXIT
 
 psql() {
 	docker run --rm -i \
-		--link "$cname":postgres \
+		--link "$cname":postgis \
 		--entrypoint psql \
 		-e PGPASSWORD="$POSTGRES_PASSWORD" \
 		"$image" \
