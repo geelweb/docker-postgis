@@ -14,4 +14,4 @@ before_script:
 
 script:
   - docker build --pull -t "$image" .
-  - ~/official-images/test/run.sh -c ~/official-images/test/config.sh -c "../tests/postgis-config.sh" "$image"
+  - ~/official-images/test/run.sh -c ~/official-images/test/config.sh -c "../test/postgis-config.sh" "$image"
