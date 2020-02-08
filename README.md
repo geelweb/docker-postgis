@@ -20,7 +20,8 @@ The `geelweb/postgis` image is based on the official [Docker Postgres image](htt
 
 ## Supported tags
 
-* `11.0`, `11`, `latest' [(11/Dockerfile)](11/Dockerfile) Run Postgres 11 with PostGIS 2.5
+* `12`, `latest` [(12/Dockerfile)](12/Dockerfile) Run Postgres 12 with PostGIS 2.5
+* `11` [(11/Dockerfile)](11/Dockerfile) Run Postgres 11 with PostGIS 2.5
 * `10.0`, `10` [(10/Dockerfile)](10/Dockerfile) Run Postgres 10 with PostGIS 2.4
 * `9.6`, `9` [(9.6/Dockerfile)](9.6/Dockerfile) Run Postgres 9.6 with PostGIS 2.3
 * `9.5` [(9.5/Dockerfile)](9.5/Dockerfile) Run Postgres 9.5 with PostGIS 2.2
