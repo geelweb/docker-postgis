@@ -5,7 +5,7 @@ dir="$(dirname "$(readlink -f "$BASH_SOURCE")")"
 
 image="$1"
 
-export POSTGRES_USER='my_postgres_user'
+export POSTGRES_USER='my_postgres _user'
 export POSTGRES_PASSWORD='my_postgres_password'
 export POSTGRES_DB='my_postgres_database'
 
