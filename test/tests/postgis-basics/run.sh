@@ -5,9 +5,9 @@ dir="$(dirname "$(readlink -f "$BASH_SOURCE")")"
 
 image="$1"
 
-export POSTGRES_USER='my_postgres _user'
-export POSTGRES_PASSWORD='my_postgres_password'
-export POSTGRES_DB='my_postgres_database'
+export POSTGRES_USER='my cool postgres user'
+export POSTGRES_PASSWORD='my cool postgres password'
+export POSTGRES_DB='my cool postgres database'
 
 cname="postgis-container-$RANDOM-$RANDOM"
 cid="$(docker run -d -e POSTGRES_USER -e POSTGRES_PASSWORD -e POSTGRES_DB --name "$cname" "$image")"
